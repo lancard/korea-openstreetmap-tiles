@@ -22,7 +22,7 @@ function longitudeToX(lon, zoom) { return (Math.floor((lon + 180) / 360 * Math.p
 function download(x, y, z) {
 	fs.mkdirSync(`${z}/${x}`, { recursive: true });
 	const file = fs.createWriteStream(`${z}/${x}/${y}.png`);
-	const request = http.get(`http://172.23.141.221:8080/tile/${z}/${x}/${y}.png`, function (response) {
+	const request = http.get(`http://172.27.142.68:8080/tile/${z}/${x}/${y}.png`, function (response) {
 		response.pipe(file);
 
 		// after download completed close filestream
