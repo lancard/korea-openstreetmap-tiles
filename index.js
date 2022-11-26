@@ -7,8 +7,8 @@ gracefulFs.gracefulify(fs);
 // config
 const zoomMin = 0; // 0
 const zoomMax = 13; // final 13
-const latitudeMax = 38.84978731237103;
-const latitudeMin = 33.02870525087617;
+const latitudeMax = 38.85
+const latitudeMin = 29.85
 const longitudeMax = 132.84627495139412;
 const longitudeMin = 123.56280597193731;
 const timeoutInterval = 10;
