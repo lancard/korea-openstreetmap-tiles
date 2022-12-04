@@ -1,4 +1,3 @@
-# 설명
-- openstreetmap tiles for Rep of Korea (South Korea)
+# description
+- openstreetmap tiles for Rep of Korea Airways and Navaids
 - zoom level 0~13 
-- refer index.js
