@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Trigger nue-fans
         uses: actions/github-script@v6
+        env:
+          GITHUB_TOKEN: ${{ secrets.WORKFLOW_PAT }}
         with:
           script: |
             await github.rest.actions.createWorkflowDispatch({
