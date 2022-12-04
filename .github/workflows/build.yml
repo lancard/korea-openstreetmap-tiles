@@ -2,9 +2,9 @@ name: build
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "main" ]
   workflow_dispatch:
 
 jobs:
@@ -19,5 +19,5 @@ jobs:
               'lancard',
               'nue-fans',
               'workflows/build.yaml',
-              'main',
+              'master',
             });
