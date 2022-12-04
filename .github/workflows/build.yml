@@ -18,6 +18,6 @@ jobs:
             await github.rest.actions.createWorkflowDispatch({
               owner: 'lancard',
               repo: 'nue-fans',
-              workflow_id: 'build.yml',
+              workflow_id: 'build',
               ref: 'master'
             });
