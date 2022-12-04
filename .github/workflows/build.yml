@@ -19,5 +19,5 @@ jobs:
               'lancard',
               'nue-fans',
               'workflows/build.yaml',
-              'master',
+              'master'
             });
