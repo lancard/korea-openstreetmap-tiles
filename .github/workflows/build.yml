@@ -17,11 +17,12 @@ jobs:
         with:
           workflow: build.yml
           repo: lancard/nue-fans
+          token: ${{ secrets.PAT }}
 
       - name: Trigger nue-fans
         uses: actions/github-script@v6
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.PAT }}
           script: |
             await github.rest.actions.createWorkflowDispatch({
               owner: 'lancard',
