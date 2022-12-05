@@ -12,6 +12,12 @@ jobs:
     permissions: write-all
     runs-on: ubuntu-latest
     steps:
+      - name: Invoke workflow in another repo with inputs
+        uses: benc-uk/workflow-dispatch@v1
+        with:
+          workflow: build.yml
+          repo: lancard/nue-fans
+
       - name: Trigger nue-fans
         uses: actions/github-script@v6
         with:
