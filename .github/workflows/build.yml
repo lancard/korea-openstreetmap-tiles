@@ -24,3 +24,15 @@ jobs:
               workflow_id: 'build.yml',
               ref: 'master'
             });
+
+      - name: Trigger custom-map-tile-server
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.PAT }}
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: 'lancard',
+              repo: 'custom-map-tile-server',
+              workflow_id: 'build.yml',
+              ref: 'main'
+            });
